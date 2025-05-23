@@ -2,26 +2,18 @@ package NivelIntermediario;
 //criar uma classe (objeto)
 public class Ninja {
 
-        static String nome;
-        static String aldeia;
-        static int idade;
+        String nome;
+        int idade;
+        String missao;
+        String nivelDificuldade;
+        String statusMissao;
 
-
-        //criar um metodo publico personalizado
-        public void SharinganAtivado(){
-                System.out.println("O Sharingan ativou");
+        public void mostrarInformacoes(){
+                System.out.println("Nome: " + nome);
+                System.out.println("Idade: " + idade);
+                System.out.println("Missao: " + missao);
+                System.out.println("Nivel: " + nivelDificuldade);
+                System.out.println("Status da Missao: " + statusMissao);
         }
-
-        //metodo string
-        public String BoasVindas(){
-               return "Olá, eu sou um ninja!";
-        }
-
-
-        //metodo int
-        public int anosHockage(int idadeMinimaHockage){
-                return idadeMinimaHockage - idade;
-        }
-
 
 }
